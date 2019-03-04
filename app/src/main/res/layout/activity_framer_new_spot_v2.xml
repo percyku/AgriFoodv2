@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgound_listview">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/top_title">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:theme="@style/ToolbarColoredBackArrow"
+            android:background="#A7BF42"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/android:Theme.Holo.Light.DarkActionBar">
+
+            <TextView
+                android:id="@+id/app_bar_anme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新增推薦"
+                android:layout_gravity="center"
+                android:textColor="#e7ffffff"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="@color/white"
+            />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/farmname"
+        android:id="@+id/farmname"
+        android:gravity="bottom"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="50%"
+        android:layout_below="@+id/top_title"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/farmname_editText"
+        android:layout_toStartOf="@+id/farmname_editText"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/farmname_editText"
+        android:gravity="bottom|center"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="50%"
+        android:layout_below="@+id/top_title"
+        android:layout_alignParentEnd="true"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="50%"
+        android:gravity="center"
+        android:layout_below="@+id/farmname"
+        android:layout_alignParentStart="true"
+        android:id="@+id/layout_left">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/farmintro"
+                android:id="@+id/farmintro"
+                app:layout_heightPercent="10%"
+                app:layout_widthPercent="50%"
+                android:layout_alignParentStart="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="50%"
+        android:id="@+id/layout_right"
+        android:layout_below="@+id/farmname_editText"
+        android:layout_alignParentEnd="true">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="20%"
+        app:layout_widthPercent="40%"
+        android:layout_below="@+id/layout_left"
+        android:layout_alignParentStart="true"
+        android:id="@+id/layout_left2">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="50%"
+        android:gravity="center"
+        android:layout_below="@+id/layout_left2"
+        android:layout_alignParentStart="true"
+        android:id="@+id/layout_left3">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/farmintro"
+            android:id="@+id/farmpic"
+            app:layout_heightPercent="10%"
+            app:layout_widthPercent="50%"
+            android:layout_alignParentStart="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="50%"
+        android:gravity="center"
+        android:id="@+id/layout_right3"
+        android:layout_below="@+id/layout_right2"
+        android:layout_alignParentEnd="true">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上傳"
+            android:id="@+id/button2"
+            android:layout_gravity="center_vertical|bottom"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:onClick="upPic"/>
+
+        <TextView
+            android:id="@+id/upload_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="OK"
+            android:textSize="24dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_gravity="center_vertical|bottom" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/imageButton"
+        android:src="@drawable/insertbutton"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_below="@+id/layout_right3"
+        android:layout_marginTop="25dp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="100%"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="20%"
+        app:layout_widthPercent="60%"
+        android:id="@+id/layout_right2"
+        android:layout_below="@+id/layout_left"
+        android:layout_alignParentEnd="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_edittext_normal"
+            android:padding="5dip"
+            android:textColorHint="#AAAAAA"
+            android:textSize="15dip"
+            android:lines="4"
+            android:hint="請輸入..."
+            android:gravity="top"
+            android:id="@+id/editText"/>
+
+    </LinearLayout>
+
+
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">食在安心</string>
+    <string name="agrifood_item1">農村資訊</string>
+    <string name="agrifood_item2">農有推薦</string>
+    <string name="agrifood_item3">旅人推薦</string>
+    <string name="agrifood_item4">紀錄軌跡</string>
+    <string name="agrifood_item5">設定</string>
+
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="search_title">search</string>
+    <string name="action_settings">settings</string>
+
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur magna tortor, semper eu feugiat eu, vehicula vitae lacus.</string>
+    <string name="recyclerview_fab_example">RecyclerView FAB example</string>
+    <string name="floating_action_menu">Floating Action Menu</string>
+    <string name="lorem_ipsum_large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed ultricies risus. Integer nisi orci, lacinia sit amet mi in, mollis scelerisque purus. Nunc risus ligula, maximus eu orci a, facilisis dictum velit. Proin nec laoreet magna. Nulla ut sagittis lorem. Morbi id enim fermentum, semper diam et, tempus leo. Aliquam vel congue orci. Suspendisse potenti. Curabitur finibus diam augue, vel bibendum sapien ultrices non.</string>
+    <string name="navigation_drawer_open">Navigation open</string>
+    <string name="navigation_drawer_close">Navigation close</string>
+
+    <string-array name="drawer_menu">
+        <item>Apple</item>
+        <item>Book</item>
+        <item>Cat</item>
+        <item>Dog</item>
+        <item>Eagle</item>
+        <item>Food</item>
+        <item>God</item>
+        <item>House</item>
+        <item>Iron</item>
+        <item>Jingle</item>
+    </string-array>
+</resources>

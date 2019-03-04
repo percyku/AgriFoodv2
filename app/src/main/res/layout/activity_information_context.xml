@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/backgound_listview"
+    tools:context="com.agrifood.percyku.agrifood.InformationContext">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:theme="@style/ToolbarColoredBackArrow"
+        android:background="#A7BF42"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/android:Theme.Holo.Light.DarkActionBar">
+
+        <TextView
+            android:id="@+id/app_bar_anme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="園區資料"
+            android:layout_gravity="center"
+            android:textColor="#e7ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:background="@color/white" />
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/imgPic"
+                android:src="@drawable/agri3"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="42dp"
+                    android:src="@drawable/farmname"
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="神木村農場"
+                    android:textSize="20dp"
+                    android:id="@+id/txtName"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="42dp"
+                    android:src="@drawable/farmtel"
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="古先生： 0916232042"
+                    android:textSize="20dp"
+                    android:id="@+id/txtTel"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="42dp"
+                    android:src="@drawable/farmintro"
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="10dp" />
+
+            </LinearLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/scrollView" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_weight="30.10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium Text"
+                    android:id="@+id/txtIntro" />
+            </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+</LinearLayout>

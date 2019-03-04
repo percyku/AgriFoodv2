@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="com.google.android.gms.maps.MapFragment"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true">
+    </fragment>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#3E3A39"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/scrollKK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="跑馬燈 跑馬燈 跑馬燈 跑馬燈 跑馬燈 "
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <com.clean.house.percyku.mylibrary.FloatingActionMenu
+        android:id="@+id/menu_agri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        fab:menu_labels_style="@style/MenuLabelsStyle"
+        fab:menu_labels_showAnimation="@anim/jump_from_down"
+        fab:menu_labels_hideAnimation="@anim/jump_to_down"
+        fab:menu_animationDelayPerItem="0"
+        fab:menu_shadowColor="#444"
+        fab:menu_colorNormal="#FEFEFE"
+        fab:menu_colorPressed="#DCDCDD"
+        fab:menu_colorRipple="#DCDCDD" >
+    </com.clean.house.percyku.mylibrary.FloatingActionMenu>
+
+
+</RelativeLayout>
