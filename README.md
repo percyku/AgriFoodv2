@@ -27,7 +27,7 @@
 - 基本操作
 
 
-  [![IMAGE ALT TEXT](https://i9.ytimg.com/vi/uugB24Dybyg/mq2.jpg?sqp=CPiprboG-oaymwEoCMACELQB8quKqQMcGADwAQH4Ac4FgAKACooCDAgAEAEYYCBlKDAwDw==&rs=AOn4CLAIFyGXshmk8phieBxxCQfNa0drwA)](https://www.youtube.com/shorts/uugB24Dybyg) 
+  [<img src="images/video_1.png">](https://www.youtube.com/shorts/uugB24Dybyg)
 
 
 # 備註
